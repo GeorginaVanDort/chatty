@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "904809659126",
+    "firebase_url": "https://message-board-96750.firebaseio.com",
+    "project_id": "message-board-96750",
+    "storage_bucket": "message-board-96750.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904809659126:android:615928f916261a4c",
+        "android_client_info": {
+          "package_name": "com.example.guest.messageboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904809659126-8ekdnb692tqc3atnf4ucvrplrrl81ccd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.guest.messageboard",
+            "certificate_hash": "82f7a84f30a1d4a5ed19c7287e49daa7c5549620"
+          }
+        },
+        {
+          "client_id": "904809659126-nrr5hscldb49c5gpmc3b7ld47fp2kmj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj_LZmhDMaEXXDpIF4snP8oySqu7ouepM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904809659126-nrr5hscldb49c5gpmc3b7ld47fp2kmj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

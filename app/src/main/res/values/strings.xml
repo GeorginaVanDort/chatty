@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MessageBoard</string>
+
+    <string-array name="categories">
+        <item>Original Series</item>
+        <item>The Animated Series</item>
+        <item>The Next Generation</item>
+        <item>Deep Space Nine</item>
+        <item>Voyager</item>
+        <item>Enterprise</item>
+        <item>Discovery</item>
+    </string-array>
+</resources>
