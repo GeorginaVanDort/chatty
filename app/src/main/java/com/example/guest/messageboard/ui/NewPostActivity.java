@@ -13,8 +13,11 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 
+import com.example.guest.messageboard.Constants;
 import com.example.guest.messageboard.R;
 import com.example.guest.messageboard.models.Message;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -45,7 +48,11 @@ public class NewPostActivity extends AppCompatActivity implements View.OnClickLi
         String category = String.valueOf(spinner.getSelectedItem());
 
         Message messageObj = new Message(name, message, category);
-        Toast.makeText(this, messageObj.getDateTime(), Toast.LENGTH_SHORT).show();
+
+        DatabaseReference messageRef = FirebaseDatabase
+                .getInstance()
+                .getReference(Constants.FIREBASE_CHILD_MESSAGES);
+        messageRef.push().setValue(messageObj);
     }
 
 }
