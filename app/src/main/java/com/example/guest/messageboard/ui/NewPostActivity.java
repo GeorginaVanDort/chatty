@@ -14,6 +14,7 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 
 import com.example.guest.messageboard.R;
+import com.example.guest.messageboard.models.Message;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -42,7 +43,9 @@ public class NewPostActivity extends AppCompatActivity implements View.OnClickLi
         String name = nameView.getText().toString();
         String message = messageView.getText().toString();
         String category = String.valueOf(spinner.getSelectedItem());
-        Toast.makeText(this, category + "!!!", Toast.LENGTH_SHORT).show();
+
+        Message messageObj = new Message(name, message, category);
+        Toast.makeText(this, messageObj.getDateTime(), Toast.LENGTH_SHORT).show();
     }
 
 }
